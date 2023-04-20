@@ -39,4 +39,15 @@ public class ArrayTests {
 
     //out of bounds, empty array, can't copy
   }
+
+  @Test
+  public void testAverage() {
+    double[] input1 = {5.0};
+    //double result1 = averageWithoutLowest(input1);
+    assertEquals(0.0, ArrayExamples.averageWithoutLowest(input1), 0.0);
+
+    double[] input2 = {5.0,3.0,6.0,4.0,1.0,1.0};
+    //double result2 = averageWithoutLowest(input2);
+    assertEquals(4.5, ArrayExamples.averageWithoutLowest(input2), 0.0);
+  }
 }

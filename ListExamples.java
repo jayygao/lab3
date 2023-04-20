@@ -12,7 +12,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(0, s);
+        result.add(s); //is not the same order was (0, s)
       }
     }
     return result;
@@ -44,6 +44,8 @@ class ListExamples {
     }
     return result;
   }
+
+  //if one of the arrays are longer than the other with duplicate values it won't sort
 
 
 }
